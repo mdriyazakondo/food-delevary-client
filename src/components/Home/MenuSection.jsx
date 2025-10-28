@@ -38,7 +38,7 @@ const MenuSection = () => {
           disableOnInteraction: false,
         }}
         modules={[FreeMode, Pagination, Autoplay]}
-        className="mySwiper"
+        className="mySwiper "
         breakpoints={{
           320: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
@@ -46,7 +46,7 @@ const MenuSection = () => {
           1280: { slidesPerView: 4 },
         }}
       >
-        {menus.map((menu, index) => (
+        {menus.slice(0, 10).map((menu, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col items-center text-center">
               <img
@@ -54,8 +54,10 @@ const MenuSection = () => {
                 alt={menu.name || "menu item"}
                 className="w-[250px] h-[250px] object-cover rounded-full shadow-md hover:scale-105 transition-transform duration-300"
               />
-              <h3 className="mt-4 text-lg font-medium">{menu.name}</h3>
-              <p className="text-gray-500 text-sm">{menu.category}</p>
+              <h3 className="mt-4 text-lg font-medium uppercase">
+                {menu.name}
+              </h3>
+              <p className="text-gray-500 text-sm uppercase">{menu.category}</p>
             </div>
           </SwiperSlide>
         ))}
