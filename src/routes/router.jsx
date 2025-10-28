@@ -4,6 +4,8 @@ import Home from "../pages/Home/Home";
 import Menu from "../pages/Menu/Menu";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import DashboardLayout from "../layout/DashoardLayout";
+import Products from "../Dashboard/Products/Products";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +26,16 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard/products",
+        element: <Products />,
       },
     ],
   },
