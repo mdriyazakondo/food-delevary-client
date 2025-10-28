@@ -11,11 +11,15 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
+    "axios": "^1.13.0",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
     "react-router": "^7.9.4",
     "react-router-dom": "^7.9.4",
+    "sweetalert2": "^11.26.3",
     "swiper": "^12.0.3",
     "tailwindcss": "^4.1.16"
   },
