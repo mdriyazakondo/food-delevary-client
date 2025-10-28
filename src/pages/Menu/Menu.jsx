@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import MenuBanner from "../../components/Menu/MenuBanner";
 
 const Menu = () => {
   return (
-    <div>
-      
+    <div className="mt-6">
+      <MenuBanner />
     </div>
   );
 };

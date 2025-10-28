@@ -1,29 +1,24 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/autoplay"; // 🔹 autoplay style (optional)
+import "swiper/css/autoplay";
 
-// Import required modules
 import { Pagination, Autoplay } from "swiper/modules";
 
 const HomeBanner = () => {
   return (
     <div className="w-full max-w-full mx-auto py-8">
-      {/* Swiper Banner Section */}
       <Swiper
         spaceBetween={30}
         pagination={{ clickable: true }}
         autoplay={{
-          delay: 3000, 
-          disableOnInteraction: false, 
+          delay: 3000,
+          disableOnInteraction: false,
         }}
-        modules={[Pagination, Autoplay]} // 🔹 added Autoplay
+        modules={[Pagination, Autoplay]}
         className="mySwiper shadow-lg"
       >
-        {/* Slides */}
         <SwiperSlide>
           <img
             src="https://ik.imagekit.io/2o23yla4n/food-delevery-project/06.png?updatedAt=1761610291926"
